@@ -48,15 +48,30 @@
 #loream{
     padding-left: 30px;
     padding-top: 10px;
+    font-size: 23px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
     font-stretch: extra-expanded;
     
 }
 #write{
     padding-left: 30px;
-    padding-top: 5px;
+    padding-top: 19px;
+    font-size: larger;
+
 
 }
 #down-write{
     padding-left: 30px;
-    padding-top: 17px;
+    padding-top: 22px;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    font-weight: bold;
+    color: aliceblue;
+}
+#theme{
+    padding-left: 30px;
+    padding-top: 14px;
+    font-size: 13px;
+    color: rgb(174, 174, 174);
 }
