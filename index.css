@@ -1,0 +1,62 @@
+*{
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+}
+.main{
+    display: flex;
+    width: 100%;
+    /* background-color: aqua; */
+}
+.head{
+    margin-top: 30px;
+    margin-left: 10%;
+    /* background-color: antiquewhite; */
+}
+#pa{
+    text-shadow: 2px 2px rgb(230, 237, 107);
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.task{
+    padding-left: 15%;
+    float: right;
+    display: flex;
+    width: 60%;
+    padding-top: 3%;
+    /* background-color: rgb(105, 222, 222); */
+
+}
+#bar{
+    font-weight: bold;
+    padding-left:25px;
+    color: rgb(139, 139, 139);
+}
+.home-button{
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    
+}
+.paragraph-box{
+    margin-top: 13%;
+    margin-left: 17%;
+    width: 33%;
+    height: 190px;
+    background-color: rgb(173, 240, 240);
+}
+#loream{
+    padding-left: 30px;
+    padding-top: 10px;
+    font-stretch: extra-expanded;
+    
+}
+#write{
+    padding-left: 30px;
+    padding-top: 5px;
+
+}
+#down-write{
+    padding-left: 30px;
+    padding-top: 17px;
+}
