@@ -2,7 +2,7 @@
     border: 1px solid black;
     width: 400px;
     height: 550px;
-    background: url(background-payment.jpg);
+    background: url(new\ img\ .webp);
     color: white;
     border-radius: 20px;
     box-shadow: 0px 0px 20px rgba(0,0, 0, 0.7);
@@ -16,7 +16,8 @@ form{
     padding: 40px;
     width: 100px;
     height: 100px;
-    backdrop-filter: brightness(70%);
+    backdrop-filter: brightness(40%);
+    backdrop-filter: blur(30%);
     flex-direction: column;
     display: flex;
     gap: 5px;
@@ -36,8 +37,6 @@ h1{
 
 }
 
-
-
 label{
     color: rgba(255, 255, 255, 0.8);
     text-transform: uppercase;
@@ -47,7 +46,7 @@ label{
     padding-left: 10px;
 }
 input{
-    background:  rgba(179, 147, 147, 0.416);
+    background:  rgba(83, 89, 114, 0.537);
     height: 40px;
     width: 250px;
     line-height: 40px;
