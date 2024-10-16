@@ -1,3 +1,15 @@
+
+.main{
+    margin: auto;
+    padding: auto;
+    width: 100%;
+    height: 585px;
+    background: url(payMainbackground.jpg);
+    box-sizing: border-box;
+    background-size: cover;
+    
+
+}
 .pay{
     border: 1px solid black;
     width: 400px;
