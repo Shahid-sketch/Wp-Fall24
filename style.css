@@ -1,0 +1,958 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    border-color: #1f1d36;
+}
+
+.wholeMain{
+    
+    height: 3970px;
+    /* background-color: rgb(211, 208, 195); */
+
+}
+
+.main{
+   width: 100%;
+    height: 700px;
+    background-color:brown;
+    background: url(images/pexels-anush-1229356.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: left ;
+    overflow: hidden;
+}
+.logo-nav{
+    position: relative;
+    display: flex;
+}
+
+.logo img {
+    width: 230px;
+    height:200px;
+
+}
+.menu-icon  {
+    margin-top: 76px;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    margin-left: 89%;
+    backdrop-filter: blur(30px);
+}
+
+.menu-icon:hover {
+    transition: 100ms;
+    cursor: pointer;
+    backdrop-filter: blur(30px);
+}
+.containNav{
+    margin-top: 30px;
+    margin-left: 400px;
+    height: 100px;
+    /* background-color: antiquewhite; */
+    position: absolute;
+
+}
+
+.nav-menu:before,
+.nav-menu:after{
+    content: " ";
+    display: table;
+}
+
+.nav-menu:after{
+    clear: both;
+}
+.nav-menu{
+    *zoom: 1;
+}
+
+nav{
+    padding: 37px;
+}
+.menu,
+.submenu{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu{
+    margin: 10px auto;
+    width: 800px;
+    width: -moz -fit-content;
+    width: -webkit-fit-content;
+    width: fit-content;
+}
+
+.menu > li {
+    background: #000;
+    float: left;
+    position: relative;
+    transform: skewX(25deg);
+}
+
+.menu a {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Arial, Helvetica;
+    font-size: 14px;
+}
+
+.menu li:hover{
+    background: #e74c3c;
+}
+
+.menu > li > a {
+    transform: skewX(-25deg);
+    padding: 1em 2em;
+}
+/* DROPDOWN ITEM */
+
+.Workout-menu{
+    position: absolute;
+    width: 200px;
+    left: 50%; margin-left: -100px;
+    transform: skewX(-25deg);
+    transform-origin: left top;
+
+}
+.Workout-menu li {
+    background-color: #34495e;
+    position: relative;
+    overflow: hidden;
+}
+
+.Workout-menu > li > a{
+    padding: 1em 2em;
+}
+
+.Workout-menu > li::after {
+    content: '';
+    position: absolute;
+    top: -125%;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0 50px rgb(0, 0, 0 ,.9);
+}
+.Workout-menu > li:nth-child(odd){
+    transform: skewX(-25deg) translateX(0);
+
+}
+.Workout-menu >li:nth-child(odd) > a{
+    transform: skewX(25deg);
+} 
+
+.Workout-menu > li:nth-child(odd)::after{
+    right: -50%;
+    transform: skewX(-25deg) rotate(3deg);
+}
+
+.Workout-menu > li:nth-child(even){
+    transform: skewX(25deg) translateX(0);
+}
+.Workout-menu > li:nth-child(even) > a {
+    transform: skewX(-25deg);
+}
+
+.Workout-menu > li:nth-child(even)::after {
+    left: -50%;
+    transform: skewX(25deg) rotate(3deg);
+}
+
+/*Show DROp down*/
+.Workout-menu,
+.Workout-menu li{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.Workout-menu li{
+    transition: .2s ease transform;
+}
+.menu >li:hover .Workout-menu,
+.menu >:hover .Workout-menu li {
+    opacity: 1;
+    visibility: visible;
+}
+.menu > li:hover.Workout-menu li :nth-child(even){
+    transform: skewX(25deg) translateX(15px);
+}
+.menu > li:hover .Workout-menu li:nth-child(odd){
+    transform: skewX(-25deg) translateX(-15px);
+}
+
+/* Qoutes Start */
+
+.Quotebox{
+    margin-top: 190px;
+    margin-left: 100px;
+    /* background-color: azure; */
+    position: absolute;
+}
+.say1{
+    color: #fff;
+    word-spacing: 1px;
+
+}
+.say2{
+    padding-left: 20px;
+    color: #fff;
+    padding-top: 5px;
+    word-spacing: 0.9px;
+}
+.say3{
+    padding-left: 50px;
+    color: #fff;
+    padding-top: 5px;
+    word-spacing: 0.9px;
+}
+.say4{
+    font-size: 50px;
+    font-weight: bold;
+    padding-left: 100px;
+    color: #e74c3c;
+    letter-spacing: 0.8px;
+}
+
+.linebox{
+    background-color: #fff;
+}
+.lineQuote{
+    color: rgb(211, 208, 195);
+    text-align: center;
+}
+
+/* Qoutes ENds */
+
+
+/* page 2 starts  */
+
+.page2{
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    background-color: rgb(225, 225, 225);
+    
+}
+
+
+/* GET START BUTTON */
+.startbtn{
+    margin-top: 30px;
+    margin-left: 43%;
+    padding: 17px 40px;
+    border-radius: 50px;
+    border: 0;
+    background-color: #fff;
+    box-shadow: #000 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    transition: all .5s ease;
+
+}
+.startbtn:hover{
+    letter-spacing: 3px;
+    background-color: #e74c3c;
+    color: #000;
+    box-shadow: #e74c3c 0px 7px 29px 0px;
+}
+.startbtn:active {
+    letter-spacing: 3px;
+    background-color: #e74c3c;
+    color: #000;
+    background-color: #e74c3c 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+
+}
+/* GET START BUTTON END */
+
+/* Text LINES STARTs */
+.textbox{
+    width: 630px;
+    height: 170px;
+    margin-top: 20px;
+    margin-left: 28%;
+    /* background-color: aliceblue; */
+}
+.line1{
+    padding-top: 15px;
+    font-size: 18px;
+    padding-top: 9px;
+    word-spacing: 1px;
+    font-weight: bold;
+    line-height: normal;
+    text-align: center;
+    
+}
+.line2{
+    padding-top: 15px;
+    font-size: 18px;
+    word-spacing: 1px;
+    padding-left: 20px;
+    font-weight: bold;
+    line-height: normal;
+    
+}
+.line3{
+    padding-top: 15px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    line-height: normal;
+    word-spacing: 1px;
+    padding-left: 10px;
+    
+}
+
+.line4{
+    padding-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    
+    word-spacing: 1px;
+    padding-left: 20px;
+    
+}
+
+/* TEXT LINES ENDS */
+
+.boxes3{
+    width: 100%;
+    height: 320px;
+    /* background-color: #34495e; */
+    display: flex;
+    align-items: center;
+}
+.box1{
+    width: 330px;
+    height: 280px;
+    border-radius: 7px;
+    background-color: #fff;
+    margin-left:8% ;    
+
+}
+.couchimg{
+    width: 130px;
+    height: 110px;
+    margin-left: 100px;
+    margin-top: 14px;
+    /* background-color: #746adc; */
+    background: url(images/gymnast-with-strong-muscles-in-full-body-view.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin:content-box;
+    position: absolute;
+}
+
+.couchline{
+    padding-top: 170px;
+    padding-left: 10px;
+    font-size: 17px;
+    word-spacing: .5px;
+    text-align: center;
+
+}
+.box1 h3{
+    position: absolute;
+    padding-top: 143px;
+    padding-left: 70px;
+    color: #e74c3c;
+
+}
+.box2{
+    width: 330px;
+    height: 280px;
+    border-radius: 7px;
+    /* background-color: rgb(243, 245, 244); */
+    background-color: #fff;
+    margin-left:40px ;  
+}
+.equipmentimg{
+    width: 130px;
+    height: 110px;
+    margin-left: 100px;
+    margin-top: 14px;
+    background-color: #746adc;
+    position: absolute;
+    background: url(images/dumbbell.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-origin:content-box;
+    
+}
+/* .fa-dumbbell{
+    padding-left: 28px;
+    padding-top: 18px;
+    font-size: 60px;
+    text-align: center;
+
+} */
+.equipmentline{
+    padding-top: 170px;
+    padding-left: 10px;
+    font-size: 17px;
+    word-spacing: .5px;
+    text-align: center;
+
+}
+.box2 h3{
+    position: absolute;
+    padding-top: 143px;
+    padding-left: 60px;
+    color: #e74c3c;
+
+}
+
+.box3{
+    width: 330px;
+    height: 280px;
+    border-radius: 7px;
+    background-color: #fff;
+    margin-left: 40px;
+}
+.nutritionimg{
+    width: 130px;
+    height: 110px;
+    margin-left: 100px;
+    margin-top: 14px;
+    /* background-color: #746adc;  */
+    position: absolute;
+    background: url(images/plan.png);
+    background-size: cover;
+    size-adjust: inherit;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-origin:content-box;
+}
+
+.nutritionline{
+    padding-top: 170px;
+    padding-left: 10px;
+    font-size: 17px;
+    word-spacing: .5px;
+    text-align: center;
+}
+.box3 h3{
+    position: absolute;
+    padding-top: 143px;
+    padding-left: 60px;
+    color: #e74c3c;
+
+}
+.PIC1{
+    margin-top: 700px;
+    width: 50%;
+    height: 480px;
+    /* background-color: #f3bfb9; */
+    background: url(images/Muskelaufbau_\ 9\ Tipps\,\ die\ Männer\ beachten\ sollten.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.PIC1 h1 {
+    padding-top: 240px;
+    padding-left: 170px;
+    font-family: Arial, Helvetica;
+    color: #e74c3c;
+    font-weight: bold;
+}
+.PIC1 p {
+    padding-top: 13px;
+    padding-left: 130px;
+    word-spacing: 1px;
+    font-family: Arial, Helvetica;
+    color:#fff;
+}
+.readmore1 {
+    margin-top: 38px;
+    margin-left: 37%;
+    border: none;
+    border-radius: 8px;
+    padding: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    background-image: linear-gradient(150deg,#fff 15% ,#ef4c3c 30% ,#000);
+}
+.readmore1 span{
+    display: flex;
+    border-radius: 6px;
+    padding:  8px 12px;
+
+    color: #fff;
+    font-size: 15px;
+    background-color: #050505;
+    filter: blur(25%);
+    transition: 300ms;
+}
+.readmore1:hover span {
+    background: transparent;
+}
+
+
+.PIC2{
+    margin-top:-480px;
+    margin-left: 50%;
+    width: 50%;
+    height: 480px;
+    /* background-color: #dc8980; */
+    background: url(images/Cardio.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+.PIC2 h1 {
+    padding-top: 240px;
+    /* padding-left: 170px; */
+    text-align: center;
+    font-family: Arial, Helvetica;
+    color: #e74c3c;
+    font-weight: bold;
+}
+.PIC2 p {
+    padding-top: 13px;
+    padding-left: 130px;
+    word-spacing: 1px;
+    font-family: Arial, Helvetica;
+    color:#fff;
+}
+.readmore2{
+    margin-top: 38px;
+    margin-left: 37%;
+    border: none;
+    border-radius: 8px;
+    padding: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    background-image: linear-gradient(150deg,#fff 15% ,#ef4c3c 30% ,#000);
+}
+.readmore2 span{
+    display: flex;
+    border-radius: 6px;
+    padding:  8px 12px;
+
+    color: #fff;
+    font-size: 15px;
+    background-color: #050505;
+    filter: blur(25%);
+    transition: 300ms;
+}
+.readmore2:hover span {
+    background: transparent;
+}
+.PIC3{
+    width: 50%;
+    height: 480px;
+    /* background-color: #dc8980; */
+    background: url(images/Fitness.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.PIC3 h1 {
+    padding-top: 240px;
+    /* padding-left: 170px; */
+    text-align: center;
+    font-family: Arial, Helvetica;
+    color: #e74c3c;
+    font-weight: bold;
+}
+.PIC3 p {
+    padding-top: 13px;
+    padding-left: 130px;
+    word-spacing: 1px;
+    font-family: Arial, Helvetica;
+    color:#fff;
+}
+.readmore3{
+    margin-top: 38px;
+    margin-left: 37%;
+    border: none;
+    border-radius: 8px;
+    padding: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    background-image: linear-gradient(150deg,#fff 15% ,#ef4c3c 30% ,#000);
+}
+.readmore3 span{
+    display: flex;
+    border-radius: 6px;
+    padding:  8px 12px;
+
+    color: #fff;
+    font-size: 15px;
+    background-color: #050505;
+    filter: blur(25%);
+    transition: 300ms;
+}
+.readmore3:hover span {
+    background: transparent;
+}
+.PIC4{
+    margin-top:-480px;
+    margin-left: 50%;
+    width: 50%;
+    height: 480px;
+    background-color: #f3bfb9;
+    background: url(images/crossfit2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.PIC4 h1 {
+    padding-top: 240px;
+    /* padding-left: 170px; */
+    text-align: center;
+    font-family: Arial, Helvetica;
+    color: #e74c3c;
+    font-weight: bold;
+}
+.PIC4 p {
+    padding-top: 13px;
+    padding-left: 130px;
+    word-spacing: 1px;
+    font-family: Arial, Helvetica;
+    color:#fff;
+}
+.readmore4{
+    margin-top: 38px;
+    margin-left: 37%;
+    border: none;
+    border-radius: 8px;
+    padding: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    background-image: linear-gradient(150deg,#fff 15% ,#ef4c3c 30% ,#000);
+}
+.readmore4 span{
+    display: flex;
+    border-radius: 6px;
+    padding:  8px 12px;
+
+    color: #fff;
+    font-size: 15px;
+    background-color: #050505;
+    filter: blur(25%);
+    transition: 300ms;
+}
+.readmore4:hover span {
+    background: transparent;
+}
+
+/* OUR TRAINERS */
+
+.ourtrainer{
+    margin-top: 60px;
+    text-align: center;
+    font-family: Arial, Helvetica;
+    color: #2e2e2e;
+}
+
+.trainerlogo{
+    width: 100px;
+    height: 75px;
+    margin-left: 46%;
+
+
+}
+
+.Trainers{
+    width: 100%;
+    height: 470px;
+    padding-top: 25px;
+    align-content: center;
+    gap: 10px;
+    justify-content: center;
+    display: flex;
+    /* background-color: #f88c82; */
+}
+.trainer1{
+    width: 300px;
+    height:420px;
+    border-radius: 4px;
+    /* background-color: aqua; */
+}
+.trainerimg1{
+    width: 300px;
+    height: 280px;
+    /* background-color: #efdcd9; */
+    border-radius: 4px;
+    background: url(images/God\ physique\ 🐐🐐🐐.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.Trainers h3 {
+    color: #2e2e2e;
+    text-align: center;
+    padding-top: 10px;
+
+
+}
+.hInt{
+    text-align: center;
+    padding-top: 7px;
+    word-spacing: 1px;
+    letter-spacing: .7px;
+    color: #e74c3c;
+}
+.intro{
+    text-align: center;
+    padding-top: 5px;
+    
+    
+}
+
+.trainer2{
+    width: 300px;
+    height:420px;
+    border-radius: 4px;
+    /* background-color: aqua; */
+}
+.trainerimg2{
+    width: 300px;
+    height: 280px;
+    /* background-color: #efdcd9; */
+    border-radius: 4px;
+    background: url(images/andrew\ duei.jpg);
+    background-size: cover;
+    background-position: top;
+}
+.trainer3{
+    width: 300px;
+    height:420px;
+    border-radius:4px;
+    /* background-color: aqua; */
+}
+.trainerimg3{
+    width: 300px;
+    height: 280px;
+    /* background-color: #efdcd9; */
+    border-radius: 4px;
+    background: url(images/Sergi\ costance.jpg);
+    background-size: cover;
+    background-position: top;
+}
+.trainer4{
+    width: 300px;
+    height:420px;
+    border-radius: 4px;
+    /* background-color: aqua; */
+}
+.trainerimg4{
+    width: 300px;
+    height: 280px;
+    /* background-color: #efdcd9; */
+    border-radius: 4px;
+    background: url(images/miranda.jpg);
+    background-size: cover;
+    background-position: top;
+}
+.intro4{
+    text-align: center;
+    padding-left: 2px;
+    padding-top: 5px;
+   
+}
+
+/* OUR PARTNERS */
+.partners{
+    margin-top: 60px;
+    text-align: center;
+    font-family: Arial, Helvetica;
+    color: #2e2e2e;
+}
+.LOgo{
+    width: 240px;
+    height: 200px;
+    margin-left: 40px;
+    margin-top: 80px;
+    filter: grayscale(70%);
+}
+.LOgo:hover {
+    cursor: pointer;
+    filter: none;
+}
+.LOgo3{
+    width: 260px;
+    height: 200px;
+    margin-left: 40px;
+    margin-top: 80px;
+    filter: grayscale(70%);
+}
+.LOgo3:hover{
+    cursor: pointer;
+    filter: none;
+    
+}
+.LOgo4{
+    width: 280px;
+    height: 200px;
+    margin-left: 40px;
+    margin-top: 80px;
+    filter: grayscale(70%);
+}
+.LOgo4:hover{
+    cursor: pointer;
+    filter: none;
+    
+}
+    /* OUR PARTNERS ENDS */
+
+    /* ABOUT SECTION IN HOME PAGE STARTS */
+.aboutbox{
+    margin-top: 40px;
+    width: 100%;
+    height: 565px;
+    background-color: #000;
+    display: flex;
+    gap: 13px;
+    align-items: center;
+}
+.about1{
+    width: 400px;
+    height: 500px;
+    margin-left: 10px;
+    /* background-color: #f3bfb9; */
+}
+
+.weblogo{
+    width: 160px;
+    height: 140px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.logodec{
+    padding-top: 5px;
+    padding-left: 10px;
+    color: #fff;
+}
+.location{
+    width: 25px;
+    height: 25px;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+.address{
+    margin-top: -22px;
+    margin-left: 50px;
+    letter-spacing: .5px;
+    color: #fff;
+}
+
+.call{
+    width: 25px;
+    height: 25px;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+.phone{
+    margin-top: -22px;
+    margin-left: 50px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.mail{
+    width: 25px;
+    height: 25px;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+.email{
+    margin-top: -26px;
+    margin-left: 50px;
+    letter-spacing: .9px;
+    color: #fff;
+    
+}
+.email:hover {
+    cursor: pointer;
+    font-size:18px;
+    text-decoration: underline;
+    color: #e74c3c;
+    transition: 270ms;
+}
+
+.about2{
+
+    width: 400px;
+    height: 500px;
+    margin-left: 10px;
+    /* background-color: #f3bfb9; */
+    
+}
+.about2 h3 {
+    padding-top: 20px;
+    font-family: Arial, Helvetica;
+    text-align: center;
+    color: #e74c3c;
+}
+
+.about2 img {
+    margin-top:20px;
+    width: 130px;
+    height: 130px;
+    background-position: center;
+    border-image-width: 3px;
+    align-items: center;
+}
+.about2 img:hover {
+    cursor: pointer;
+    box-shadow: 0 2px 3px  #e74c3c;
+}
+.about3{
+    width: 400px;
+    height: 500px;
+    text-align: center;
+    
+
+}
+.about3 h3{
+    font-family: Arial, Helvetica;
+    margin-top: 20px;
+    color: #e74c3c;
+
+}
+.about3 input, textarea {
+    width: 80%;
+    padding: 7px;
+    margin-top: 20px;
+    margin: 5px 0 ;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    border: none;
+    outline: none;
+
+}
+.about3 input:hover {
+    transition: 250ms;
+    box-shadow: 2px 2px 3px #e74c3c;
+
+}
+.textsubmit{
+    border: none;
+    border-radius: 3px;
+    margin-top: 20px;
+    background-color: #e74c3c;
+    padding: 7px 30px;
+    color: #fff;
+    font-family: Arial, Helvetica;
+}
+.textsubmit:hover {
+    font-size: medium;
+    cursor: pointer;
+    letter-spacing: .7px;
+    box-shadow: 3px 3px 6px #efdcd9;
+    transition: 250ms;
+}

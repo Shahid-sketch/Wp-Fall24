@@ -1,0 +1,273 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.whole{
+    width: 100%;
+    height:1300px;
+    /* background-color: rgb(225, 225, 225); */
+    /* position: absolute; */
+    
+}
+.main{
+    width: 100%;
+    height: 585px;
+    /* background-color: #282828;  */
+    background-image: url(images/1.jpg);
+    background-size: cover;
+    background-position:  top;
+    background-repeat: no-repeat;
+    background-origin:content-box;
+    /* position: absolute; */
+
+
+}
+
+    /* NAV BAR STARTS */
+.logo img {
+    width: 225px;
+    height:190px;
+    backdrop-filter:blur(3px) ;
+
+}
+
+.menu-icon  {
+    margin-top: 50px;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    margin-left: 93%;
+    backdrop-filter: blur(3px);
+}
+
+.menu-icon:hover {
+    cursor: pointer;
+    transition: 100ms;
+    backdrop-filter: blur(3px);
+}
+
+    /* MENU */
+.containNav{
+    margin-top: -190px;
+    margin-left: 430px;
+    height: 100px;
+    /* background-color: antiquewhite; */
+    position: absolute;
+    backdrop-filter: blur(1px);
+
+
+}
+
+.nav-menu:before,
+.nav-menu:after{
+    content: " ";
+    display: table;
+}
+
+.nav-menu:after{
+    clear: both;
+}
+.nav-menu{
+    *zoom: 1;
+}
+
+nav{
+    padding: 37px;
+}
+.menu{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu{
+    margin: 10px auto;
+    width: 800px;
+    width: -moz -fit-content;
+    width: -webkit-fit-content;
+    width: fit-content;
+}
+
+.menu > li {
+    background: #000;
+    float: left;
+    position: relative;
+    transform: skewX(25deg);
+}
+
+.menu a {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Arial, Helvetica;
+    font-size: 14px;
+}
+
+.menu li:hover{
+    background: #e74c3c;
+}
+
+.menu > li > a {
+    transform: skewX(-25deg);
+    padding: 1em 2em;
+}
+
+    /* NAV BAR ENDS */
+
+.p1 {
+    font-family: Arial, Helvetica;
+    margin-left: 300px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 26px;
+    padding-top: 70px;
+    word-spacing: 2px;
+}  
+h2{
+    font-family: Arial, Helvetica;
+    margin-top: 20px;
+    margin-left: 340px;
+    letter-spacing: 1px;
+    color:#e74c3c;
+    word-spacing: 1.7px;
+} 
+
+.p4 {
+    font-family: Arial, Helvetica;
+    margin-left: 260px;
+    padding-top: 24px;
+    font-size: 26px;
+    letter-spacing: 1px;
+    color: #fff;
+    word-spacing: 1.7px;
+}
+
+.line {
+    margin-top: 20px;
+    text-align: center;
+    word-spacing: 1.7px;
+    letter-spacing: .8px;
+}
+
+.cardbox{
+    width: 100%;
+    height:585px;
+    /* background-color: rgb(251, 211, 159); */
+    margin-top: 20px;
+    position: absolute;
+}
+.card1 {
+    width: 250px;
+    height: 300px;
+    background-color: chartreuse;
+    margin-top: 30px;
+    margin-left: 30px;
+    border-radius: 4px;
+    background-image: url(images/Sergi\ Constance.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card2 {
+    width: 340px;
+    height: 220px;
+    background-color: chartreuse;
+    margin-top: 30px;
+    margin-left: 30px;
+    border-radius: 4px;
+    background-image: url(images/gall324.jpg);
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card3 {
+    width: 340px;
+    height: 260px;
+    background-color: chartreuse;
+    margin-top: -548px;
+    margin-left: 320px;
+    border-radius: 4px;
+    background-image: url(images/gall\ \(5\).jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.card4 {
+    width: 280px;
+    height: 280px;
+    background-color: chartreuse;
+    margin-left: 380px;
+    margin-top: 10px;
+    border-radius: 4px;
+    background-image: url(images/gall\ \(2\).jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.card5 {
+    width: 250px;
+    height: 300px;
+    background-color: chartreuse;
+    margin-top: -548px;
+    margin-left: 680px;
+    border-radius: 4px;
+    background-image: url(images/gall\ \(6\).jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+
+}
+.card6 {
+    width: 250px;
+    height: 237px;
+    background-color: chartreuse;
+    margin-top:10px;
+    margin-left: 680px;
+    border-radius: 4px;
+    background-image: url(images/gall\ \(4\).jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.card7 {
+    width: 280px;
+    height: 250px;
+    background-color: chartreuse;
+    margin-top:-545px ;
+    margin-left: 950px;
+    border-radius: 4px;
+    background-image: url(images/gall\ \(7\).jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+.card8 {
+    width: 280px;
+    height: 290px;
+    margin-top:5px;
+    margin-left: 950px;
+    border-radius: 4px;
+    background-color: chartreuse;
+    background-image: url(images/gall\ \(1\).jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.story {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    word-spacing: 1.7px;
+    letter-spacing: .8px;
+}

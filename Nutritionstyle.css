@@ -1,0 +1,518 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.WholeMain{
+    width: 100%;
+    height:2400px;
+    background-color: rgb(225, 225, 225);
+    /* position: absolute; */
+    
+}
+.main{
+    width: 100%;
+    height: 585px;
+    /* background-color: #282828;  */
+    background-image: url(images/1.jpg);
+    background-size: cover;
+    background-position:  top;
+    background-repeat: no-repeat;
+    background-origin:content-box;
+    /* position: absolute; */
+
+
+}
+
+    /* NAV BAR STARTS */
+.logo img {
+    width: 225px;
+    height:190px;
+    backdrop-filter:blur(3px) ;
+
+}
+
+.menu-icon  {
+    margin-top: 50px;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    margin-left: 90%;
+    backdrop-filter: blur(3px);
+}
+
+.menu-icon:hover {
+    cursor: pointer;
+    transition: 100ms;
+    backdrop-filter: blur(3px);
+}
+
+    /* MENU */
+.containNav{
+    margin-top: -190px;
+    margin-left: 410px;
+    height: 100px;
+    /* background-color: antiquewhite; */
+    position: absolute;
+    backdrop-filter: blur(1px);
+
+
+}
+
+.nav-menu:before,
+.nav-menu:after{
+    content: " ";
+    display: table;
+}
+
+.nav-menu:after{
+    clear: both;
+}
+.nav-menu{
+    *zoom: 1;
+}
+
+nav{
+    padding: 37px;
+}
+.menu{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu{
+    margin: 10px auto;
+    width: 800px;
+    width: -moz -fit-content;
+    width: -webkit-fit-content;
+    width: fit-content;
+}
+
+.menu > li {
+    background: #000;
+    float: left;
+    position: relative;
+    transform: skewX(25deg);
+}
+
+.menu a {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Arial, Helvetica;
+    font-size: 14px;
+}
+
+.menu li:hover{
+    background: #e74c3c;
+}
+
+.menu > li > a {
+    transform: skewX(-25deg);
+    padding: 1em 2em;
+}
+
+    /* NAV BAR ENDS */
+
+.p1 {
+    font-family: Arial, Helvetica;
+    text-align: center;
+    color: #fff;
+    letter-spacing: .6px;
+    padding-top: 70px;
+    word-spacing: 2px;
+}  
+.p2{
+    font-family: Arial, Helvetica;
+    padding-left: 370px;
+    padding-top: 24px;
+    letter-spacing: .6px;
+    color: #fff;
+    word-spacing: 1.7px;
+}
+h4{
+    font-family: Arial, Helvetica;
+    margin-top: -17px;
+    text-align: center;
+    letter-spacing: .8px;
+    color:#e74c3c;
+    word-spacing: 1.7px;
+} 
+.p3 {
+    font-family: Arial, Helvetica;
+    padding-left: 750px;
+    margin-top: -20px;
+    letter-spacing: .6px;
+    color: #fff;
+    word-spacing: 1.7px;
+}
+.p4 {
+    font-family: Arial, Helvetica;
+    text-align: center;
+    padding-top: 24px;
+    letter-spacing: .6px;
+    color: #fff;
+    word-spacing: 1.7px;
+}
+.protein{
+    font-family: Arial, Helvetica;
+    color: #e74c3c;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 545px;
+    letter-spacing: 2px;
+}
+
+.proteindef{
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    margin-top:90px; 
+    margin-left: 290px;
+    word-spacing: 1.7px;
+    
+}
+
+.proteinstuff1{
+    width:100%;
+    height:270px;
+    margin-top:150px;
+    background-color: aliceblue;  
+    display: flex;
+    gap: 10px;
+
+}
+.prot1{
+    width: 200px;
+    height: 230px;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: #565555;
+    margin-left: 37px;
+}
+.prtimg1{
+    width: 200px;
+    height: 180px;
+    background-color:  beige;
+    background-image: url(images/chicken.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+}
+.prtimg2{
+    width: 200px;
+    height: 180px;
+    background-color:  beige;
+    background-image: url(images/fish.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+}
+.prtimg3{
+    width: 200px;
+    height: 180px;
+    background-color:  beige;
+    background-image: url(images/eggs.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+}
+.prtimg4{
+    width: 200px;
+    height: 180px;
+    background-color:  beige;
+    background-image: url(images/tuna.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+}
+.prtimg5{
+    width: 200px;
+    height: 180px;
+    background-color:  beige;
+    background-image: url(images/beef.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+}
+.prtimg6{
+    width: 200px;
+    height: 180px;
+    background-color:  beige;
+    background-image: url(images/Tufo.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+}
+.prtimg7{
+    width: 200px;
+    height: 180px;
+    background-color:  beige;
+    background-image: url(images/Lentils.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+}
+.prtimg8{
+    width: 200px;
+    height: 180px;
+    background-color:  beige;
+    background-image: url(images/yogurt.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+}
+.prtimg9{
+    width: 200px;
+    height: 180px;
+    background-color:  beige;
+    background-image: url(images/seeds.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+}
+.prtimg10{
+    width: 200px;
+    height: 180px;
+    background-color:  beige;
+    background-image: url(images/cheese.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+}
+.prot1 h3{
+    padding-top: 14px;
+    text-align: center;
+}
+.proteinstuff2{
+    width:100%;
+    height:270px;
+    margin-top:10px;
+    background-color: aliceblue; 
+    gap: 10px;
+    display: flex;   
+}
+
+.carbs{
+    font-family: Arial, Helvetica;
+    color: #e74c3c;
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 520px;
+    letter-spacing: 2px;
+}
+.carbsdef{
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    margin-top:80px; 
+    margin-left: 340px;
+    word-spacing: 1.7px;
+    font-size: 17px;
+}
+.carbsstuff1{
+    width:100%;
+    height:270px;
+    margin-top:150px;
+    background-color: aliceblue;  
+    display: flex;
+    gap: 10px;
+}
+.carbsstuff2{
+    width:100%;
+    height:270px;
+    margin-top:10px;
+    background-color: aliceblue; 
+    gap: 10px;
+    display: flex;  
+}
+.crbimg1{
+    
+    width: 200px;
+    height: 180px;
+    background-color:  beige;
+    background-image: url(images/potato.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    
+}
+.crbimg2{
+    
+    width: 200px;
+    height: 180px;
+    background-color:  beige;
+    background-image: url(images/rice.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    
+}
+.crbimg3{
+    
+    width: 200px;
+    height: 180px;
+    background-color:  beige;
+    background-image: url(images/navybeans.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    
+}
+.crbimg4{
+    
+    width: 200px;
+    height: 180px;
+    background-color:  beige;
+    background-image: url(images/bananas.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    
+}
+.crbimg5{
+    
+    width: 200px;
+    height: 180px;
+    background-color:  beige;
+    background-image: url(images/oatmeal.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    
+}
+.crbimg6{
+    
+    width: 200px;
+    height: 180px;
+    background-color:  beige;
+    background-image: url(images/milk.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    
+}
+.crbimg7{
+    
+    width: 200px;
+    height: 180px;
+    background-color:  beige;
+    background-image: url(images/raisans.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    
+}
+.crbimg8{
+    
+    width: 200px;
+    height: 180px;
+    background-color:  beige;
+    background-image: url(images/chestnuts.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    
+}
+.crbimg9{
+    
+    width: 200px;
+    height: 180px;
+    background-color:  beige;
+    background-image: url(images/brownrice.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    
+}
+.crbimg10{
+    
+    width: 200px;
+    height: 180px;
+    background-color:  beige;
+    background-image: url(images/wheatbread.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    
+}
+.fats{
+    font-family: Arial, Helvetica;
+    color: #e74c3c;
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 600px;
+    letter-spacing: 2px;
+}
+.fatsdef{
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    margin-top:75px; 
+    margin-left: 370px;
+    word-spacing: 1.7px;
+    
+}
+.fatstuff{
+    width:100%;
+    height:270px;
+    margin-top:150px;
+    background-color: aliceblue;  
+    display: flex;
+    gap: 10px;   
+}
+.fatimg1{
+    width: 200px;
+    height: 180px;
+    background-color:  beige;
+    background-image: url(images/olives.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    
+}
+.fatimg2{
+    width: 200px;
+    height: 180px;
+    background-color:  beige;
+    background-image: url(images/walnuts.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    
+}
+.fatimg3{
+    width: 200px;
+    height: 180px;
+    background-color:  beige;
+    background-image: url(images/avacado.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+
+}
+.fatimg4{
+    width: 200px;
+    height: 180px;
+    background-color:  beige;
+    background-image: url(images/nutbutter.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    
+}
+.fatimg5{
+    width: 200px;
+    height: 180px;
+    background-color:  beige;
+    background-image: url(images/cashews.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    
+}
